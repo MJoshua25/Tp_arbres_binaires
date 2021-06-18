@@ -165,11 +165,33 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public void videoInverse() {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
+		Iterator<Node> iterateur = this.iterator();
+		inverseVideo(iterateur);
+	}
+
+	public void inverseVideo(Iterator<Node> iterateur) {
+		if (!iterateur.isEmpty()) {
+			switch (iterateur.getValue().state) {
+				case 0:
+					iterateur.setValue(Node.valueOf(1));
+					break;
+				case 1:
+					iterateur.setValue(Node.valueOf(0));
+					break;
+				case 2:
+					iterateur.setValue(Node.valueOf(2));
+					break;
+			}
+			iterateur.goLeft();
+			inverseVideo(iterateur);
+
+			iterateur.goUp();
+
+			iterateur.goRight();
+			inverseVideo(iterateur);
+			iterateur.goUp();
+		}
+
 	}
 
 	/**
