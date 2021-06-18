@@ -1,21 +1,19 @@
 package ci.miage.java.tree;
 
 import java.util.Scanner;
-import java.util.function.Consumer;
 
 import ci.miage.java.tree_util.AbstractImage;
 import ci.miage.java.tree_util.Iterator;
 import ci.miage.java.tree_util.Node;
-import ci.miage.java.tree_util.NodeType;
 
- /**
+/**
  * @author Yao Josué Kouakou
  * @version 5.0
  * @since 2021-06-17
  * 
  *        Classe dÃ©crivant les images en noir et blanc de 256 sur 256 pixels
  *        sous forme d'arbres binaires.
- * 
+ *
  */
 
 public class Image extends AbstractImage {
@@ -39,12 +37,37 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public boolean isPixelOn(int x, int y) {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
-	    return false;
+		Iterator<Node> iterateur = this.iterator();
+		var debutX = 0;
+		var debutY = 0;
+		var fx = 255;
+		var fy = 255;
+		var aux = 0;
+
+		while(iterateur.getValue().state==2){
+			if ((aux % 2) == 0) {
+				int miy = (debutY + fy) / 2;
+				if (y < miy) {
+					iterateur.goLeft();
+					fy = miy;
+				} else {
+					iterateur.goRight();
+					debutY = miy+1;
+				}
+			} else {
+				int mix=(debutX +fx)/2;
+				if (x<mix){
+					iterateur.goLeft();
+					fx=mix;
+				}else{
+					iterateur.goRight();
+					debutX =mix+1;
+				}
+			}
+			aux++;
+		}
+
+		return iterateur.getValue().state==1;
 	}
 
 	/**
@@ -57,12 +80,30 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public void affect(AbstractImage image2) {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
+		Iterator<Node> iterateur = this.iterator();
+		Iterator<Node> iterateur2 = image2.iterator();
+		iterateur.clear();
+		copyImage(iterateur, iterateur2);
 	}
+
+	 public void copyImage(Iterator<Node> iterateur, Iterator<Node> iterateur2) {
+		 if (!iterateur2.isEmpty()) {
+			 iterateur.addValue(Node.valueOf(iterateur2.getValue().state));
+			 iterateur2.goLeft();
+			 iterateur.goLeft();
+			 copyImage(iterateur, iterateur2);
+
+			 iterateur2.goUp();
+			 iterateur.goUp();
+
+
+			 iterateur2.goRight();
+			 iterateur.goRight();
+			 copyImage(iterateur, iterateur2);
+			 iterateur2.goUp();
+			 iterateur.goUp();
+		 }
+	 }
 
 	/**
 	 * this devient rotation de image2 Ã  180 degrÃ©s.
