@@ -114,12 +114,32 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public void rotate180(AbstractImage image2) {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
+		Iterator<Node> iterateur = this.iterator();
+		Iterator<Node> iterateur2 = image2.iterator();
+		iterateur.clear();
+		rotat(iterateur, iterateur2);
 	}
+
+
+	public void rotat(Iterator<Node> iterateur, Iterator<Node> iterateur2) {
+		if (!iterateur2.isEmpty()) {
+			iterateur.addValue(Node.valueOf(iterateur2.getValue().state));
+			iterateur2.goLeft();
+			iterateur.goRight();
+			rotat(iterateur, iterateur2);
+
+			iterateur2.goUp();
+			iterateur.goUp();
+
+
+			iterateur2.goRight();
+			iterateur.goLeft();
+			rotat(iterateur, iterateur2);
+			iterateur2.goUp();
+			iterateur.goUp();
+		}
+	}
+
 
 	/**
 	 * this devient rotation de image2 Ã  90 degrÃ©s dans le sens des aiguilles
