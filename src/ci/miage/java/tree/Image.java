@@ -204,57 +204,54 @@ public class Image extends AbstractImage {
 	@Override
 	public void mirrorV(AbstractImage image2) {
 		if(!image2.isEmpty()) {
-			Iterator<Node> it1 = this.iterator();
-			Iterator<Node> it2 = image2.iterator();
-			it1.clear();
+			Iterator<Node> iterateur = this.iterator();
+			Iterator<Node> iterateur2 = image2.iterator();
+			iterateur.clear();
 			int parite = 0;
-			if (it2.isEmpty()) {
-				it1.addValue(it2.getValue());
+			if (iterateur2.isEmpty()) {
+				iterateur.addValue(iterateur2.getValue());
 				return;
 			}
-			it1.addValue(it2.getValue());
-			it2.goLeft();
-			it1.goRight();
-			AuxMirrorV(it1, it2, parite);
-			it1.goRoot();
-			it2.goRoot();
-			it2.goRight();
-			it1.goLeft();
-			AuxMirrorV(it1, it2, parite);
+			iterateur.addValue(iterateur2.getValue());
+			iterateur2.goLeft();
+			iterateur.goRight();
+			auxMirrorV(iterateur, iterateur2, parite);
+			iterateur.goRoot();
+			iterateur2.goRoot();
+			iterateur2.goRight();
+			iterateur.goLeft();
+			auxMirrorV(iterateur, iterateur2, parite);
 		}
 	}
 
-	public void AuxMirrorV(Iterator<Node> it1, Iterator<Node> it2,int parite){
-		if(!it2.isEmpty()) {
-			it1.addValue(it2.getValue());
-			parite++;
-			if(parite%2==0) {
-
-				it2.goLeft();
-				it1.goRight();
-				AuxMirrorV(it1, it2, parite);
-				it2.goUp();
-				it1.goUp();
-
-				it2.goRight();
-				it1.goLeft();
-				AuxMirrorV(it1, it2, parite);
-				it2.goUp();
-				it1.goUp();
-			}
-			else{
-				it2.goLeft();
-				it1.goLeft();
-				AuxMirrorV(it1, it2, parite);
-				it2.goUp();
-				it1.goUp();
-
-				it2.goRight();
-				it1.goRight();
-				AuxMirrorV(it1, it2, parite);
-				it2.goUp();
-				it1.goUp();
-			}
+	public void auxMirrorV(Iterator<Node> iterateur, Iterator<Node> iterateur2, int parite){
+		if (iterateur2.isEmpty()) {
+			return;
+		}
+		iterateur.addValue(iterateur2.getValue());
+		parite++;
+		if (parite % 2 == 0) {
+			iterateur2.goLeft();
+			iterateur.goRight();
+			auxMirrorV(iterateur, iterateur2, parite);
+			iterateur2.goUp();
+			iterateur.goUp();
+			iterateur2.goRight();
+			iterateur.goLeft();
+			auxMirrorV(iterateur, iterateur2, parite);
+			iterateur2.goUp();
+			iterateur.goUp();
+		} else {
+			iterateur2.goLeft();
+			iterateur.goLeft();
+			auxMirrorV(iterateur, iterateur2, parite);
+			iterateur2.goUp();
+			iterateur.goUp();
+			iterateur2.goRight();
+			iterateur.goRight();
+			auxMirrorV(iterateur, iterateur2, parite);
+			iterateur2.goUp();
+			iterateur.goUp();
 		}
 	}
 
@@ -279,16 +276,16 @@ public class Image extends AbstractImage {
 			iterateur.addValue(iterateur2.getValue());
 			iterateur2.goLeft();
 			iterateur.goLeft();
-			AuxMirrorH(iterateur, iterateur2, parite);
+			auxMirrorH(iterateur, iterateur2, parite);
 			iterateur.goRoot();
 			iterateur2.goRoot();
 			iterateur2.goRight();
 			iterateur.goRight();
-			AuxMirrorH(iterateur, iterateur2, parite);
+			auxMirrorH(iterateur, iterateur2, parite);
 		}
 	}
 
-	public void AuxMirrorH(Iterator<Node> iterateur, Iterator<Node> iterateur2, int parite){
+	public void auxMirrorH(Iterator<Node> iterateur, Iterator<Node> iterateur2, int parite){
 		if (iterateur2.isEmpty()) {
 			return;
 		}
@@ -298,25 +295,25 @@ public class Image extends AbstractImage {
 
 			iterateur2.goLeft();
 			iterateur.goRight();
-			AuxMirrorH(iterateur, iterateur2, parite);
+			auxMirrorH(iterateur, iterateur2, parite);
 			iterateur2.goUp();
 			iterateur.goUp();
 
 			iterateur2.goRight();
 			iterateur.goLeft();
-			AuxMirrorH(iterateur, iterateur2, parite);
+			auxMirrorH(iterateur, iterateur2, parite);
 			iterateur2.goUp();
 			iterateur.goUp();
 		} else {
 			iterateur2.goLeft();
 			iterateur.goLeft();
-			AuxMirrorH(iterateur, iterateur2, parite);
+			auxMirrorH(iterateur, iterateur2, parite);
 			iterateur2.goUp();
 			iterateur.goUp();
 
 			iterateur2.goRight();
 			iterateur.goRight();
-			AuxMirrorH(iterateur, iterateur2, parite);
+			auxMirrorH(iterateur, iterateur2, parite);
 			iterateur2.goUp();
 			iterateur.goUp();
 		}
