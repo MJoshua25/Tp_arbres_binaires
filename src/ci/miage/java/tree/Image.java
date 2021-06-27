@@ -385,11 +385,51 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public void intersection(AbstractImage image1, AbstractImage image2) {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
+		Iterator<Node> iterateur = this.iterator();
+		Iterator<Node> iterateur2 = image2.iterator();
+		Iterator<Node> iterateur3 = image1.iterator();
+		iterateur.clear();
+		auxIntersection(iterateur, iterateur2, iterateur3);
+	}
+
+	public void auxIntersection(Iterator<Node> iterateur, Iterator<Node> iterateur2, Iterator<Node> iterateur3) {
+
+		if (iterateur2.getValue().state == 0 || iterateur3.getValue().state == 0) {
+			iterateur.addValue(Node.valueOf(0));
+		}  else if (iterateur2.getValue().state == 1 && iterateur3.getValue().state == 1) {
+			iterateur.addValue(Node.valueOf(1));
+		} else if (iterateur2.getValue().state == 1 && iterateur3.getValue().state == 2) {
+			copyImage(iterateur, iterateur3);
+		} else if (iterateur2.getValue().state == 2 && iterateur3.getValue().state == 2) {
+			iterateur.addValue(Node.valueOf(2));
+			iterateur3.goLeft();
+			iterateur2.goLeft();
+			iterateur.goLeft();
+			auxIntersection(iterateur, iterateur2, iterateur3);
+			int nd = iterateur.getValue().state;
+			iterateur.goUp();
+			iterateur2.goUp();
+			iterateur3.goUp();
+
+			iterateur.goRight();
+			iterateur2.goRight();
+			iterateur3.goRight();
+			auxIntersection(iterateur, iterateur2, iterateur3);
+			int ng = iterateur.getValue().state;
+
+			iterateur2.goUp();
+			iterateur3.goUp();
+
+			if ((nd == 0 && ng == 0) || (nd == 1 && ng == 1)) {
+				iterateur.remove();
+				iterateur.goUp();
+				iterateur.setValue(Node.valueOf(ng));
+				iterateur.goLeft();
+				iterateur.remove();
+			}
+			iterateur.goUp();
+
+		}
 	}
 
 	/**
