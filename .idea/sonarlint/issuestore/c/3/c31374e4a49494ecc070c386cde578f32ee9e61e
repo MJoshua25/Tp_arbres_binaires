@@ -1,0 +1,173 @@
+
+c
+java:S1192ò"GDefine a constant instead of duplicating this literal "a2.arb" 9 times.(º¿ëÂıÿÿÿÿ
+^
+java:S1192Ü"GDefine a constant instead of duplicating this literal "a1.arb" 8 times.(ÕªÌÚ
+c
+java:S1192»"GDefine a constant instead of duplicating this literal "a6.arb" 4 times.(óåü—üÿÿÿÿ
+c
+java:S1192¤"GDefine a constant instead of duplicating this literal "a5.arb" 5 times.(ÅÂ†úÿÿÿÿ
+h
+java:S1192ç"LDefine a constant instead of duplicating this literal "cartoon.arb" 6 times.(Ø¦Ğïûÿÿÿÿ
+M
+java:S2589<"7Remove this expression which always evaluates to "true"(ŒÖÊ¬
+R
+java:S2589e"7Remove this expression which always evaluates to "true"(„¡¨­ùÿÿÿÿ
+m
+java:S3776M"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¯Ùµèıÿÿÿÿ
+J
+java:S6212S"/Declare this local variable with "var" instead.(ç¬Ã§üÿÿÿÿ
+K
+java:S6212ƒ"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+D
+java:S1905‰"(Remove this unnecessary cast to "Image".(Óœ¸÷ùÿÿÿÿ
+K
+java:S6212"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+K
+java:S6212”"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+K
+java:S6212œ"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+K
+java:S6212¦"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+K
+java:S6212°"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+K
+java:S6212¼"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+K
+java:S6212Æ"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+K
+java:S6212Ğ"/Declare this local variable with "var" instead.(°İÜâúÿÿÿÿ
+F
+java:S6212Ü"/Declare this local variable with "var" instead.(ÕªÌÚ
+K
+java:S6212ò"/Declare this local variable with "var" instead.(º¿ëÂıÿÿÿÿ
+F
+java:S6212Œ"/Declare this local variable with "var" instead.(èÿ­¿
+F
+java:S6212˜"/Declare this local variable with "var" instead.(ÕªÌÚ
+E
+java:S6212™"/Declare this local variable with "var" instead.(½¾‰G
+K
+java:S6212š"/Declare this local variable with "var" instead.(ëíÛ©üÿÿÿÿ
+F
+java:S6212›"/Declare this local variable with "var" instead.(¨†öÔ
+F
+java:S6212£"/Declare this local variable with "var" instead.(ÕªÌÚ
+K
+java:S6212¤"/Declare this local variable with "var" instead.(ÅÂ†úÿÿÿÿ
+K
+java:S6212¥"/Declare this local variable with "var" instead.(ëíÛ©üÿÿÿÿ
+F
+java:S6212¦"/Declare this local variable with "var" instead.(èŠ¯§
+F
+java:S6212®"/Declare this local variable with "var" instead.(ÕªÌÚ
+E
+java:S6212¯"/Declare this local variable with "var" instead.(½¾‰G
+K
+java:S6212°"/Declare this local variable with "var" instead.(ëíÛ©üÿÿÿÿ
+F
+java:S6212±"/Declare this local variable with "var" instead.(¬“ôú
+K
+java:S6212º"/Declare this local variable with "var" instead.(º¿ëÂıÿÿÿÿ
+K
+java:S6212»"/Declare this local variable with "var" instead.(óåü—üÿÿÿÿ
+K
+java:S6212¼"/Declare this local variable with "var" instead.(ëíÛ©üÿÿÿÿ
+F
+java:S6212½"/Declare this local variable with "var" instead.(˜Á—Ú
+F
+java:S6212Æ"/Declare this local variable with "var" instead.(ÕªÌÚ
+K
+java:S6212Ç"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+F
+java:S6212Î"/Declare this local variable with "var" instead.(ÕªÌÚ
+E
+java:S6212Ï"/Declare this local variable with "var" instead.(½¾‰G
+F
+java:S6212Ö"/Declare this local variable with "var" instead.(ÕªÌÚ
+K
+java:S6212×"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+K
+java:S6212Ø"/Declare this local variable with "var" instead.(—‚üàüÿÿÿÿ
+K
+java:S6212ß"/Declare this local variable with "var" instead.(º¿ëÂıÿÿÿÿ
+K
+java:S6212à"/Declare this local variable with "var" instead.(İ«ˆöıÿÿÿÿ
+K
+java:S6212ç"/Declare this local variable with "var" instead.(Ø¦Ğïûÿÿÿÿ
+K
+java:S6212è"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+K
+java:S6212é"/Declare this local variable with "var" instead.(…³Íúÿÿÿÿ
+K
+java:S6212ğ"/Declare this local variable with "var" instead.(Ø¦Ğïûÿÿÿÿ
+K
+java:S6212ñ"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+F
+java:S6212ò"/Declare this local variable with "var" instead.(ÈƒÃÌ
+K
+java:S6212ù"/Declare this local variable with "var" instead.(Ø¦Ğïûÿÿÿÿ
+K
+java:S6212ú"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+F
+java:S6212û"/Declare this local variable with "var" instead.(ØİÍÅ
+K
+java:S6212‚"/Declare this local variable with "var" instead.(Ø¦Ğïûÿÿÿÿ
+K
+java:S6212ƒ"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+F
+java:S6212„"/Declare this local variable with "var" instead.(ˆ£çµ
+K
+java:S6212‹"/Declare this local variable with "var" instead.(øâôÇûÿÿÿÿ
+K
+java:S6212Œ"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+K
+java:S6212"/Declare this local variable with "var" instead.(•Îèïúÿÿÿÿ
+K
+java:S6212”"/Declare this local variable with "var" instead.(Ø¦Ğïûÿÿÿÿ
+K
+java:S6212•"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+F
+java:S6212–"/Declare this local variable with "var" instead.(Ã¯½ß
+F
+java:S6212—"/Declare this local variable with "var" instead.(”È„’
+K
+java:S6212¡"/Declare this local variable with "var" instead.(øâôÇûÿÿÿÿ
+K
+java:S6212¢"/Declare this local variable with "var" instead.(™ŞÄÏúÿÿÿÿ
+K
+java:S6212£"/Declare this local variable with "var" instead.(•Îèïúÿÿÿÿ
+F
+java:S6212®"/Declare this local variable with "var" instead.(ÀŒ¹‹
+K
+java:S6212µ"/Declare this local variable with "var" instead.(òéã÷üÿÿÿÿ
+F
+java:S6212¼"/Declare this local variable with "var" instead.(¼Îº´
+F
+java:S6212Ã"/Declare this local variable with "var" instead.(†ªÛÃ
+F
+java:S6212Ê"/Declare this local variable with "var" instead.(ç«ö¸
+K
+java:S6212Ñ"/Declare this local variable with "var" instead.(â°ºµıÿÿÿÿ
+F
+java:S6212Ø"/Declare this local variable with "var" instead.(Ãß¶
+K
+java:S6212ß"/Declare this local variable with "var" instead.(º¿ëÂıÿÿÿÿ
+K
+java:S6212à"/Declare this local variable with "var" instead.(óåü—üÿÿÿÿ
+F
+java:S6212ç"/Declare this local variable with "var" instead.(¡ùÄ
+K
+java:S6212è"/Declare this local variable with "var" instead.(óåü—üÿÿÿÿ
+F
+java:S6212ï"/Declare this local variable with "var" instead.(¡ùÄ
+K
+java:S6212ğ"/Declare this local variable with "var" instead.(óåü—üÿÿÿÿ
+F
+java:S6212÷"/Declare this local variable with "var" instead.(ÕªÌÚ
+K
+java:S6212ø"/Declare this local variable with "var" instead.(ñÙ»ƒıÿÿÿÿ
+K
+java:S6212ÿ"/Declare this local variable with "var" instead.(øâôÇûÿÿÿÿ
+K
+java:S6212•"/Declare this local variable with "var" instead.(º¿ëÂıÿÿÿÿ

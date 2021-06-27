@@ -1,0 +1,62 @@
+
+…
+java:S1192¡"nDefine a constant instead of duplicating this literal " d'arbre non vide (-1 pour retour au menu) : " 3 times.(ô™ıŸ
+s
+java:S3008*"XRename this field "TEXT_COMMANDS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛÌ„Òıÿÿÿÿ
+:
+java:S1659;"$Declare "SIZE_Y" on a separate line.(Ö•Èõ
+I
+java:S1659M".Declare "secondTreeNumber" on a separate line.(ÏìËíøÿÿÿÿ
+H
+java:S1659M"-Declare "thirdTreeNumber" on a separate line.(ÏìËíøÿÿÿÿ
+o
+java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(§ì¨³
+`
+java:S1124."EReorder the modifiers to comply with the Java Language Specification.(ÚÌ”Æûÿÿÿÿ
+J
+java:S6212x"/Declare this local variable with "var" instead.(ˆ¢Ó«ıÿÿÿÿ
+F
+java:S6212"/Declare this local variable with "var" instead.(İ…ä¢
+F
+java:S6212"/Declare this local variable with "var" instead.(’¨Ó
+n
+java:S3776¨"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(±¬éüÿÿÿÿ
+T	java:S106©"9Replace this use of System.out or System.err by a logger.(ëóÌøÿÿÿÿ
+8	java:S131­""Add a default case to this switch.(è¿Ü
+O	java:S106µ"9Replace this use of System.out or System.err by a logger.(Ş—ıì
+T	java:S106¾"9Replace this use of System.out or System.err by a logger.(‡ğ©şÿÿÿÿ
+T	java:S106À"9Replace this use of System.out or System.err by a logger.(»Áƒòùÿÿÿÿ
+T	java:S106î"9Replace this use of System.out or System.err by a logger.(ª˜İùÿÿÿÿ
+O	java:S106ğ"9Replace this use of System.out or System.err by a logger.(‚Ë†¦
+O	java:S106ù"9Replace this use of System.out or System.err by a logger.(÷™ç­
+T	java:S106û"9Replace this use of System.out or System.err by a logger.(˜…ööùÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(è§‰Ş
+O	java:S106„"9Replace this use of System.out or System.err by a logger.(è§‰Ş
+K
+java:S6212š"/Declare this local variable with "var" instead.(ˆ¢Ó«ıÿÿÿÿ
+n
+java:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 56 to the 15 allowed.(•Áèóùÿÿÿÿ
+;
+java:S1659¦"Declare "j" on a separate line.(²«ªÀøÿÿÿÿ
+;
+java:S1659¦"Declare "k" on a separate line.(²«ªÀøÿÿÿÿ
+Z
+java:S6208±"CMerge the previous cases into this one using comma-separated label.(¬°ù
+_
+java:S6208Ä"CMerge the previous cases into this one using comma-separated label.(—Í×©øÿÿÿÿ
+_
+java:S6208ç"CMerge the previous cases into this one using comma-separated label.(Á«ôÚùÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Éç›ìúÿÿÿÿ
+F
+java:S6212"/Declare this local variable with "var" instead.(’Œ™ô
+K
+java:S6212—"/Declare this local variable with "var" instead.(´†Ÿşÿÿÿÿ
+K
+java:S6212 "/Declare this local variable with "var" instead.(´†Ÿşÿÿÿÿ
+F
+java:S6212¬"/Declare this local variable with "var" instead.(¥ Áƒ
+F
+java:S6212¾"/Declare this local variable with "var" instead.(ˆ÷·“
+T	java:S106Õ"9Replace this use of System.out or System.err by a logger.(ëÑÀ˜úÿÿÿÿ
+;
+java:S3398¨"Move this method into "Action".(±¬éüÿÿÿÿ
