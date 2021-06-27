@@ -332,10 +332,10 @@ public class Image extends AbstractImage {
 	public void zoomIn(AbstractImage image2) {
 		Iterator<Node> iterateur = this.iterator();
 		Iterator<Node> iterateur2 = image2.iterator();
-		iterateur.clear();
 		if (iterateur2.nodeType() != NodeType.DOUBLE) {
 			return;
 		}
+		iterateur.clear();
 		iterateur2.goLeft();
 		if (iterateur2.nodeType() == NodeType.DOUBLE) {
 			iterateur2.goLeft();
@@ -353,11 +353,25 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public void zoomOut(AbstractImage image2) {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
+		Iterator <Node> iterateur = this.iterator();
+		Iterator <Node> iterateur2 = image2.iterator();
+		if (iterateur2.nodeType() != NodeType.DOUBLE) {
+			return;
+		}
+		if(iterateur.nodeType() == NodeType.DOUBLE) {
+			iterateur.goLeft();
+			if (iterateur.nodeType() == NodeType.DOUBLE) {
+				iterateur.goLeft();
+				copyImage(iterateur, iterateur2);
+			}
+		}
+		if (iterateur2.nodeType() == NodeType.DOUBLE) {
+			iterateur2.goLeft();
+			if (iterateur2.nodeType() == NodeType.DOUBLE) {
+				iterateur2.goLeft();
+			}
+			copyImage(iterateur, iterateur2);
+		}
 	}
 
 	/**
