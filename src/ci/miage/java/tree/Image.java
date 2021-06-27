@@ -219,11 +219,59 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public void mirrorH(AbstractImage image2) {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
+		if(!image2.isEmpty()) {
+			Iterator<Node> it1 = this.iterator();
+			Iterator<Node> it2 = image2.iterator();
+			it1.clear();
+			int parite = 0;
+			if (it2.isEmpty()) {
+				it1.addValue(it2.getValue());
+				return;
+			}
+			it1.addValue(it2.getValue());
+			it2.goLeft();
+			it1.goLeft();
+			AuxMirrorH(it1, it2, parite);
+			it1.goRoot();
+			it2.goRoot();
+			it2.goRight();
+			it1.goRight();
+			AuxMirrorH(it1, it2, parite);
+		}
+	}
+
+	public void AuxMirrorH(Iterator<Node> it1, Iterator<Node> it2,int parite){
+		if(!it2.isEmpty()) {
+			it1.addValue(it2.getValue());
+			parite++;
+			if(parite%2!=0) {
+
+				it2.goLeft();
+				it1.goRight();
+				AuxMirrorH(it1, it2, parite);
+				it2.goUp();
+				it1.goUp();
+
+				it2.goRight();
+				it1.goLeft();
+				AuxMirrorH(it1, it2, parite);
+				it2.goUp();
+				it1.goUp();
+			}
+			else{
+				it2.goLeft();
+				it1.goLeft();
+				AuxMirrorH(it1, it2, parite);
+				it2.goUp();
+				it1.goUp();
+
+				it2.goRight();
+				it1.goRight();
+				AuxMirrorH(it1, it2, parite);
+				it2.goUp();
+				it1.goUp();
+			}
+		}
 	}
 
 	/**
