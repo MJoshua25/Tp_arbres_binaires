@@ -220,23 +220,23 @@ public class Image extends AbstractImage {
 	@Override
 	public void mirrorH(AbstractImage image2) {
 		if(!image2.isEmpty()) {
-			Iterator<Node> it1 = this.iterator();
-			Iterator<Node> it2 = image2.iterator();
-			it1.clear();
+			Iterator<Node> iterateur = this.iterator();
+			Iterator<Node> iterateur2 = image2.iterator();
+			iterateur.clear();
 			int parite = 0;
-			if (it2.isEmpty()) {
-				it1.addValue(it2.getValue());
+			if (iterateur2.isEmpty()) {
+				iterateur.addValue(iterateur2.getValue());
 				return;
 			}
-			it1.addValue(it2.getValue());
-			it2.goLeft();
-			it1.goLeft();
-			AuxMirrorH(it1, it2, parite);
-			it1.goRoot();
-			it2.goRoot();
-			it2.goRight();
-			it1.goRight();
-			AuxMirrorH(it1, it2, parite);
+			iterateur.addValue(iterateur2.getValue());
+			iterateur2.goLeft();
+			iterateur.goLeft();
+			AuxMirrorH(iterateur, iterateur2, parite);
+			iterateur.goRoot();
+			iterateur2.goRoot();
+			iterateur2.goRight();
+			iterateur.goRight();
+			AuxMirrorH(iterateur, iterateur2, parite);
 		}
 	}
 
