@@ -5,6 +5,7 @@ import java.util.Scanner;
 import ci.miage.java.tree_util.AbstractImage;
 import ci.miage.java.tree_util.Iterator;
 import ci.miage.java.tree_util.Node;
+import ci.miage.java.tree_util.NodeType;
 
 /**
  * @author Yao Josué Kouakou
@@ -329,11 +330,17 @@ public class Image extends AbstractImage {
 	 */
 	@Override
 	public void zoomIn(AbstractImage image2) {
-		System.out.println();
-		System.out.println("-------------------------------------------------");
-		System.out.println("Fonction à écrire");
-		System.out.println("-------------------------------------------------");
-		System.out.println();
+		Iterator<Node> iterateur = this.iterator();
+		Iterator<Node> iterateur2 = image2.iterator();
+		iterateur.clear();
+		if (iterateur2.nodeType() != NodeType.DOUBLE) {
+			return;
+		}
+		iterateur2.goLeft();
+		if (iterateur2.nodeType() == NodeType.DOUBLE) {
+			iterateur2.goLeft();
+		}
+		copyImage(iterateur, iterateur2);
 	}
 
 	/**
